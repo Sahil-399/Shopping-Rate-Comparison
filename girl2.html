@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first shirt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+    
+        @import url('https://fonts.googleapis.com/css2?family=Actor&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+        
+   
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            height:80px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            color: white;
+        }
+        p{
+            font-size: 30px;
+        }
+        .navbar .webname {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 100px;
+            font-size: 18px;
+        }
+        .search-bar{
+            margin-right: 200px;
+            width:300px;
+            height: 29px;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .shirt2{
+            height:550px;
+            width:550px;
+            margin-top: 50px;
+            margin-left: 100px;
+            border-radius: 50px;
+            transition: transform 0.3s;
+             object-fit:contain;
+        }
+       
+        .shirt2:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .sp1{
+            margin-left: 130px;
+            margin-top: 70px;
+        }
+        .div1{
+            display:flex;
+        }
+        .p1{
+            font-size: 25px;
+            margin-top: 5px;
+            color:grey;
+           
+        }
+        .sp2{
+            margin-top: 200px;
+        
+        }
+        .sizecontainer{
+            display: flex;
+            
+        }
+        .size{
+            margin: 20px;
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(234, 240, 216);
+            border: 1px solid black;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .size:hover{
+            transform: scale(1.05);
+        }
+        .productdetail{
+            color:grey;
+            font-size: 20px;
+        }
+        .p2{
+            font-family: roboto slab;
+            padding-left: 200px;
+            font-size: 30px;
+        }
+        .labelpricing{
+            height:80px;
+            width:60%;
+            background-color: rgb(234, 240, 216);
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 2px solid black;
+        }
+    
+        .appname{
+            font-family: Roboto Slab;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+        .price{
+
+            margin-left: 300px;
+            font-size: 25px;
+        }
+        .buy{
+            height: 40px;
+            width: 80px;
+            margin-left:300px ;
+            background-color: rgb(78, 146, 78);
+            border-radius: 10px;
+            border-color: transparent;
+            transition: transform 0.3s;
+            color:white;
+        }
+        .buy:hover{
+            transform: scale(1.05);
+        }
+        .btncart{
+            height:50px;
+            width: 400px;
+            font-size: 30px;
+            background-color: rgb(78, 146, 78);
+            border-radius: 10px;
+            border-color: transparent;
+            color:white;
+        }
+        
+        </style>
+        <script>
+   
+ 
+    function addToCart(name, price) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push({ name, price });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Item added to cart!");
+        window.location.href = "cart.html";
+    }
+
+</script>
+        
+</head>
+<body>
+<form action="url1" method="POST">
+    <nav class="navbar">
+        <p><b>Shopinista</b></p>
+        <div class="nav-links">
+            <input type="search" class="search-bar" placeholder="Search...">
+            <a href="index.html">Home</a>
+            <a href="#">Cart</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+    <div class="div1">
+        <div>
+            <img src="https://m.media-amazon.com/images/I/81JGUuZmIuL._AC_SY741_.jpg" alt="shirt image" class="shirt2">
+        </div>
+        <div class="sp1">
+            <p><b><i>Urbano Fashion</i></b></p>
+            <p class="p1">Men Spread Collar Solid Cotton Casual Shirt</p>
+            <br>
+            <hr>
+            <br>
+            <p><b style="font-size: 20px;">Size</b></p>
+            <p style="color:grey; font-size: 20px;">Available in 3 sizes</p>
+            <div class="sizecontainer">
+            <p class="size" >38</p>
+            <p class="size">40</p>
+            <p class="size">42</p>
+            <br>
+            </div>
+            <hr>
+            <p style="font-size: 20px; margin-top: 30px;"><b >Product Details</b> </p>
+            <p class="productdetail">
+                <br>
+                Black & Grey opaque casual shirt <br>
+                Spread collar <br>
+                Button placket <br>
+                Patch pocket <br>
+                Long sleeves <br>
+                Curved hemline <br>
+                Cotton <br>
+                Machine Wash
+            </p>
+            <br>
+            <hr>  
+        </div>
+        
+    </div>
+    <br>
+    <br><br>
+<div class="container">
+    <div class="headingpricing">
+        <p class="p2">Lets see the prices across the different websites</p><br><br><br>
+    </div>
+    <center>
+    <div class="labelpricing">
+        <span class="appname">Amazon</span><span class="price" name="price1">800</span><span ><a hre="" ></a></span></a><br>
+    </div><br><br>
+    <div class="labelpricing">
+        <span class="appname">Myntra</span><span class="price" name="price2">1000</span><span><a hre="" ></a><br>
+    </div><br><br>
+    <div class="labelpricing">
+        <span class="appname">Flipcart</span><span class="price" name="price3">600</span><span><a hre="" ></a>
+    </div><br><br>
+    
+</center>
+</div>
+<div><br><br><br>
+    <center>
+  <form action="AddToCart" method="post">
+            <input type="hidden" name="productName1" value="Urbano Fashion Shirt">
+            <input type="hidden" name="price1" value="600">
+<button type="button" class="btncart" onclick="addToCart('ethnic kurta set2', 600)">Add to Cart</button>
+
+
+        </form>    <br><br><br>
+</center>
+<br><br><br><br>
+</div>
+</form>
+</body>
+</html>

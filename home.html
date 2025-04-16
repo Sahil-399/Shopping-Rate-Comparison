@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopinista - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            height:80px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            color: white;
+        }
+        p{
+            font-size: 30px;
+        }
+        .navbar .webname {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 100px;
+            font-size: 18px;
+        }
+        .search-bar{
+            margin-right: 200px;
+            width:300px;
+            height: 25px;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+     
+        .container {
+            display: flex;
+            justify-content:space-between;
+            margin: 50px auto;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+        .image2{
+            width:80%;
+            border-radius: 20px;
+            margin-top: 10px;
+           
+        }
+        .h1{
+            text-align: center;
+        }
+        .sec {
+            flex: 1;
+            margin: 10px;
+            padding-right: 40px;
+            
+        }
+        .sec img {
+            width: 100%;
+            max-width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .sec img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <p><b>Shopinista</b></p>
+        <div class="nav-links">
+            <input type="search" class="search-bar" placeholder="Search...">
+            <a href="index.html">Home</a>
+            <a href="#">Cart</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+    
+    <div class="image">
+        <center>
+        <img src="https://images.alphacoders.com/138/thumb-1920-1385685.png" alt="fashion banner"height=500px width=100% class="image2"style="padding-top: 4px;">
+    </center>
+    </div>
+    <br>
+    <h1 class="h1">Click your choice :)</h1>
+    <div class="container">
+        <div class="sec">
+            <a href="mens.html">
+            <img src="https://images.pexels.com/photos/1735234/pexels-photo-1735234.jpeg?auto=compress&cs=tinysrgb&w=600" alt="boys section">
+            <p style="text-align: center; color:black; text-decoration: none; margin-top: 7px;">Mens</p></a>
+        </div>
+        <div class="sec">
+        <a href="women.html">
+            <img src="https://images.pexels.com/photos/28524683/pexels-photo-28524683/free-photo-of-stylish-woman-in-brown-dress-and-headscarf.jpeg?auto=compress&cs=tinysrgb&w=600" alt="girls section">
+            <p style="text-align: center; margin-top: 7px;">Womens</p>
+        </div>
+        <div class="sec">
+          <a href="footwear.html">
+            <img src="https://images.pexels.com/photos/2529158/pexels-photo-2529158.jpeg?auto=compress&cs=tinysrgb&w=600" alt="footwear"> <p style="text-align: center; margin-top: 7px;">Footwear</p>
+        </div>
+       
+    </div>
+   
+</body>
+</html>
